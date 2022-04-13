@@ -8,12 +8,28 @@
 import SwiftUI
 
 struct CharactersView: View {
+    
+    @State private var characters = [Character]()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(characters, id: \.id) { character in
+                NavigationLink(destination: CharacterDetailView(character: character)) {
+                    VStack {
+                        Text(character.name)
+                            .font(.body)
+                    }
+                }
+            }
+            .navigationTitle("Characters")
+        }
+        .task {
+            try? await characters = NetworkManager.shared.getCharacters()
+        }
     }
 }
 
-struct CharactersView_Previews: PreviewProvider {
+struct CharactersView_Preview: PreviewProvider {
     static var previews: some View {
         CharactersView()
     }

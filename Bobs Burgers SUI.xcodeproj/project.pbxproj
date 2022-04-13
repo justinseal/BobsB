@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F11A07D928077C54009F723D /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11A07D828077C54009F723D /* CharacterDetailView.swift */; };
+		F14E652227F798E100A88341 /* StoreDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14E652127F798E100A88341 /* StoreDetail.swift */; };
 		F17C2A4D27F6394F00D08062 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C2A4C27F6394F00D08062 /* Errors.swift */; };
 		F1F7337B27F39CCF0074B5CF /* Bobs_Burgers_SUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7337A27F39CCF0074B5CF /* Bobs_Burgers_SUIApp.swift */; };
 		F1F7337F27F39CD10074B5CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F7337E27F39CD10074B5CF /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F11A07D828077C54009F723D /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
+		F14E652127F798E100A88341 /* StoreDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetail.swift; sourceTree = "<group>"; };
 		F17C2A4C27F6394F00D08062 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		F1F7337727F39CCF0074B5CF /* Bobs Burgers SUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bobs Burgers SUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F7337A27F39CCF0074B5CF /* Bobs_Burgers_SUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bobs_Burgers_SUIApp.swift; sourceTree = "<group>"; };
@@ -46,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F11A07D728077C39009F723D /* DetailViews */ = {
+			isa = PBXGroup;
+			children = (
+				F14E652127F798E100A88341 /* StoreDetail.swift */,
+				F11A07D828077C54009F723D /* CharacterDetailView.swift */,
+			);
+			path = DetailViews;
+			sourceTree = "<group>";
+		};
 		F1F7336E27F39CCF0074B5CF = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +103,7 @@
 		F1F7339027F39F170074B5CF /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F11A07D728077C39009F723D /* DetailViews */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -183,11 +197,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1F7339327F39FE30074B5CF /* NetworkManager.swift in Sources */,
+				F11A07D928077C54009F723D /* CharacterDetailView.swift in Sources */,
 				F1F7338927F39D020074B5CF /* AppTabView.swift in Sources */,
 				F1F7338B27F39D5A0074B5CF /* CharactersView.swift in Sources */,
 				F1F7339827F3A5E70074B5CF /* Store.swift in Sources */,
 				F1F7337B27F39CCF0074B5CF /* Bobs_Burgers_SUIApp.swift in Sources */,
 				F1F7338F27F39D850074B5CF /* PestTruckView.swift in Sources */,
+				F14E652227F798E100A88341 /* StoreDetail.swift in Sources */,
 				F1F7339627F3A3E90074B5CF /* Charater.swift in Sources */,
 				F17C2A4D27F6394F00D08062 /* Errors.swift in Sources */,
 				F1F7338D27F39D740074B5CF /* StoreNextDoorView.swift in Sources */,

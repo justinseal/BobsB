@@ -12,15 +12,19 @@ struct StoreNextDoorView: View {
     @State private var stores = [Store]()
     
     var body: some View {
-        List(stores, id: \.id) { store in
-            VStack {
-                Text(store.name)
-                    .font(.headline)
-                
+        NavigationView {
+            List(stores, id: \.id) { store in
+                NavigationLink(destination: StoreDetail(store: store)) {
+                    VStack {
+                        Text(store.name)
+                            .font(.body)
+                    }
+                }
             }
+            .navigationTitle("Store Next Door")
         }
         .task {
-         try? await stores = NetworkManager.shared.getStores()
+            try? await stores = NetworkManager.shared.getStores()
         }
     }
 }

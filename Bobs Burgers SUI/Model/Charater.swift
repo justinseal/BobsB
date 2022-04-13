@@ -9,10 +9,11 @@ import SwiftUI
 
 struct Character: Codable {
     let id: Int
-    let name: String
-    let image: URL
-    let gender: String
-    let hairColor: String
-    let occupation: String
-    let url: URL
+    var name: String
+    var image: String
+    var gender: String?
+    var hairColor: String?
+    var occupation: String?
+    var url: String
+    
 }
