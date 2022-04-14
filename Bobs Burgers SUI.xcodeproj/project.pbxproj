@@ -10,6 +10,7 @@
 		F11A07D928077C54009F723D /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11A07D828077C54009F723D /* CharacterDetailView.swift */; };
 		F14E652227F798E100A88341 /* StoreDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14E652127F798E100A88341 /* StoreDetail.swift */; };
 		F17C2A4D27F6394F00D08062 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C2A4C27F6394F00D08062 /* Errors.swift */; };
+		F1DC5DDD2808C3A3002D4BE2 /* PestTruck.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DC5DDC2808C3A3002D4BE2 /* PestTruck.swift */; };
 		F1F7337B27F39CCF0074B5CF /* Bobs_Burgers_SUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7337A27F39CCF0074B5CF /* Bobs_Burgers_SUIApp.swift */; };
 		F1F7337F27F39CD10074B5CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F7337E27F39CD10074B5CF /* Assets.xcassets */; };
 		F1F7338227F39CD10074B5CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F7338127F39CD10074B5CF /* Preview Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		F11A07D828077C54009F723D /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		F14E652127F798E100A88341 /* StoreDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetail.swift; sourceTree = "<group>"; };
 		F17C2A4C27F6394F00D08062 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		F1DC5DDC2808C3A3002D4BE2 /* PestTruck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PestTruck.swift; sourceTree = "<group>"; };
 		F1F7337727F39CCF0074B5CF /* Bobs Burgers SUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bobs Burgers SUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F7337A27F39CCF0074B5CF /* Bobs_Burgers_SUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bobs_Burgers_SUIApp.swift; sourceTree = "<group>"; };
 		F1F7337E27F39CD10074B5CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			children = (
 				F1F7339527F3A3E90074B5CF /* Charater.swift */,
 				F1F7339727F3A5E70074B5CF /* Store.swift */,
+				F1DC5DDC2808C3A3002D4BE2 /* PestTruck.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				F1F7339827F3A5E70074B5CF /* Store.swift in Sources */,
 				F1F7337B27F39CCF0074B5CF /* Bobs_Burgers_SUIApp.swift in Sources */,
 				F1F7338F27F39D850074B5CF /* PestTruckView.swift in Sources */,
+				F1DC5DDD2808C3A3002D4BE2 /* PestTruck.swift in Sources */,
 				F14E652227F798E100A88341 /* StoreDetail.swift in Sources */,
 				F1F7339627F3A3E90074B5CF /* Charater.swift in Sources */,
 				F17C2A4D27F6394F00D08062 /* Errors.swift in Sources */,

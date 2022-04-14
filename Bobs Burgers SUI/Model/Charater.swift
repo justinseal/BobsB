@@ -15,5 +15,6 @@ struct Character: Codable {
     var hairColor: String?
     var occupation: String?
     var url: String
+    var voicedBy: String?
     
 }
