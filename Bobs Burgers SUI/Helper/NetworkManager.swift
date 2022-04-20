@@ -14,7 +14,7 @@ final class NetworkManager {
     private let baseURL = "https://bobsburgers-api.herokuapp.com/"
     
     func getCharacters() async throws -> [Character] {
-        let endpoint = baseURL + "characters?sortby=name&limit=10"
+        let endpoint = baseURL + "characters?sortby=name"
         
         guard let url = URL(string: endpoint) else {
             throw AlertContext.badData

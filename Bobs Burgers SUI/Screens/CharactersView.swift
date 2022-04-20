@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CharactersView: View {
     
-    @State private var characters = [Character]()
+    @State var characters = [Character]()
     
     var body: some View {
         NavigationView {

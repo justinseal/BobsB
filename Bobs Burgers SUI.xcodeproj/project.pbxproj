@@ -11,6 +11,7 @@
 		F14E652227F798E100A88341 /* StoreDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14E652127F798E100A88341 /* StoreDetail.swift */; };
 		F17C2A4D27F6394F00D08062 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C2A4C27F6394F00D08062 /* Errors.swift */; };
 		F1DC5DDD2808C3A3002D4BE2 /* PestTruck.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DC5DDC2808C3A3002D4BE2 /* PestTruck.swift */; };
+		F1DC5DE1280F5C3F002D4BE2 /* ScrollingCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DC5DE0280F5C3F002D4BE2 /* ScrollingCharacterView.swift */; };
 		F1F7337B27F39CCF0074B5CF /* Bobs_Burgers_SUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7337A27F39CCF0074B5CF /* Bobs_Burgers_SUIApp.swift */; };
 		F1F7337F27F39CD10074B5CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F7337E27F39CD10074B5CF /* Assets.xcassets */; };
 		F1F7338227F39CD10074B5CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F7338127F39CD10074B5CF /* Preview Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		F14E652127F798E100A88341 /* StoreDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetail.swift; sourceTree = "<group>"; };
 		F17C2A4C27F6394F00D08062 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		F1DC5DDC2808C3A3002D4BE2 /* PestTruck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PestTruck.swift; sourceTree = "<group>"; };
+		F1DC5DE0280F5C3F002D4BE2 /* ScrollingCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingCharacterView.swift; sourceTree = "<group>"; };
 		F1F7337727F39CCF0074B5CF /* Bobs Burgers SUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bobs Burgers SUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F7337A27F39CCF0074B5CF /* Bobs_Burgers_SUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bobs_Burgers_SUIApp.swift; sourceTree = "<group>"; };
 		F1F7337E27F39CD10074B5CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,13 +82,10 @@
 		F1F7337927F39CCF0074B5CF /* Bobs Burgers SUI */ = {
 			isa = PBXGroup;
 			children = (
-				F1F7339127F39FC30074B5CF /* Helper */,
-				F1F7339027F39F170074B5CF /* Screens */,
 				F1F7337A27F39CCF0074B5CF /* Bobs_Burgers_SUIApp.swift */,
 				F1F7338827F39D020074B5CF /* AppTabView.swift */,
-				F1F7338A27F39D5A0074B5CF /* CharactersView.swift */,
-				F1F7338C27F39D740074B5CF /* StoreNextDoorView.swift */,
-				F1F7338E27F39D850074B5CF /* PestTruckView.swift */,
+				F1F7339127F39FC30074B5CF /* Helper */,
+				F1F7339027F39F170074B5CF /* Screens */,
 				F1F7339427F3A3B60074B5CF /* Model */,
 				F1F7337E27F39CD10074B5CF /* Assets.xcassets */,
 				F1F7338027F39CD10074B5CF /* Preview Content */,
@@ -105,6 +104,10 @@
 		F1F7339027F39F170074B5CF /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F1F7338A27F39D5A0074B5CF /* CharactersView.swift */,
+				F1F7338C27F39D740074B5CF /* StoreNextDoorView.swift */,
+				F1F7338E27F39D850074B5CF /* PestTruckView.swift */,
+				F1DC5DE0280F5C3F002D4BE2 /* ScrollingCharacterView.swift */,
 				F11A07D728077C39009F723D /* DetailViews */,
 			);
 			path = Screens;
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1F7339327F39FE30074B5CF /* NetworkManager.swift in Sources */,
+				F1DC5DE1280F5C3F002D4BE2 /* ScrollingCharacterView.swift in Sources */,
 				F11A07D928077C54009F723D /* CharacterDetailView.swift in Sources */,
 				F1F7338927F39D020074B5CF /* AppTabView.swift in Sources */,
 				F1F7338B27F39D5A0074B5CF /* CharactersView.swift in Sources */,

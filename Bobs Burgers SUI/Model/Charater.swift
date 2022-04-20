@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct Character: Codable {
-    let id: Int
+struct Character: Codable, Identifiable {
+        
+    var id: Int
     var name: String
     var image: String
     var gender: String?
@@ -16,5 +17,5 @@ struct Character: Codable {
     var occupation: String?
     var url: String
     var voicedBy: String?
-    
+        
 }

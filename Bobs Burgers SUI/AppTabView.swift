@@ -10,7 +10,7 @@ import SwiftUI
 struct AppTabView: View {
     var body: some View {
         TabView {
-            CharactersView()
+            ScrollingCharacterView()
                 .tabItem {
                     Label("Characters", systemImage: "person.3.fill")
                 }
