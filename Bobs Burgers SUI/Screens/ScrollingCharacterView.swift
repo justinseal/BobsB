@@ -11,7 +11,7 @@ struct ScrollingCharacterView: View {
     @State var characters = [Character]()
     
     let layout = [
-        GridItem(.adaptive(minimum: 80))
+        GridItem(), GridItem(), GridItem()
     ]
     
     var body: some View {
@@ -23,11 +23,13 @@ struct ScrollingCharacterView: View {
                             image
                                 .resizable()
                                 .scaledToFit()
+                                .frame(width: 80, height: 80)
                             
                         } placeholder: {
                             ProgressView()
                         }
-                        Text("Name: \(character.name)")
+                        Text(character.name)
+                            .font(.caption2)
                     }
                 }
             }
