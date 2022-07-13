@@ -13,23 +13,25 @@ final class NetworkManager {
     
     private let baseURL = "https://bobsburgers-api.herokuapp.com/"
     
+    func fetch<T: Decodable>(from url: URL) async throws -> [T] {
+        let (data, _) = try await URLSession.shared.data(from: url)
+        
+        do {
+            let decoder = JSONDecoder()
+            return try decoder.decode([T].self, from: data)
+        }
+    }
+    
     func getCharacters() async throws -> [Character] {
         let endpoint = baseURL + "characters?sortby=name"
         
         guard let url = URL(string: endpoint) else {
             throw AlertContext.badData
         }
+        return try await fetch(from: url)
         
-        let (data, _) = try await URLSession.shared.data(from: url)
-        
-        do {
-            let decoder = JSONDecoder()
-            return try decoder.decode([Character].self, from: data)
-        } catch {
-            throw AlertContext.badData
         }
-    }
-    
+
     func getStores() async throws -> [Store] {
         let endpoint = baseURL + "storeNextDoor?&limit=20"
         
@@ -37,13 +39,15 @@ final class NetworkManager {
             throw AlertContext.badData
         }
         
-        let (data, _) = try await URLSession.shared.data(from: url)
+       return try await fetch(from: url)
+    }
+    
+    func getTrucks() async throws -> [PestTruck] {
+        let endPoint = baseURL + "pestControlTruck/"
         
-        do {
-            let decoder = JSONDecoder()
-            return try decoder.decode([Store].self, from: data)
-        } catch {
+        guard let url = URL(string: endPoint) else {
             throw AlertContext.badData
         }
+        return try await fetch(from: url)
     }
 }

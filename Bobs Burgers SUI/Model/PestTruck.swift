@@ -7,9 +7,11 @@
 
 import Foundation
 
-class PestTruck: Codable, ObservableObject {
+struct PestTruck: Codable, Identifiable {
     var id: Int
-    var name: String
+    var name: String?
     var image: String
-    var season: String?
+    var season: Int
+    
+    static let example = PestTruck(id: 1, name: "Rat's all Folks! EXTERMINATORS", image: "https://bobsburgers-api.herokuapp.com/images/pestControlTruck/1.jpg", season: 1)
 }
