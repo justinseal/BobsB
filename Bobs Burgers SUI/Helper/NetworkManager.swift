@@ -10,7 +10,6 @@ import Foundation
 final class NetworkManager {
     
     static let shared = NetworkManager()
-    
     private let baseURL = "https://bobsburgers-api.herokuapp.com/"
     
     func fetch<T: Decodable>(from url: URL) async throws -> [T] {
@@ -33,12 +32,11 @@ final class NetworkManager {
         }
 
     func getStores() async throws -> [Store] {
-        let endpoint = baseURL + "storeNextDoor?&limit=20"
+        let endpoint = baseURL + "storeNextDoor"
         
         guard let url = URL(string: endpoint) else {
             throw AlertContext.badData
         }
-        
        return try await fetch(from: url)
     }
     

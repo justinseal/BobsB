@@ -24,7 +24,6 @@ struct TruckDetailView: View {
             VStack {
                 Text(truck.name ?? "Not Available")
                     .font(.headline)
-                
             }
         }
     }

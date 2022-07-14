@@ -32,7 +32,6 @@ struct StoreDetail: View {
                 }
             }
         }
-        
     }
 }
 
