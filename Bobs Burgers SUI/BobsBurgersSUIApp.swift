@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Bobs_Burgers_SUIApp: App {
+struct BobsBurgersSUIApp: App {
     var body: some Scene {
         WindowGroup {
             AppTabView()

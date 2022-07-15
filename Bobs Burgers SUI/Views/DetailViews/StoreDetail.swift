@@ -22,7 +22,7 @@ struct StoreDetail: View {
             .frame(width: 200, height: 200, alignment: .leading)
             
             VStack {
-                Text(store.name)
+                Text(store.name ?? "Name Unavilable")
                     .font(.headline)
                 VStack {
                     Text("Season: \(store.season)")

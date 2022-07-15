@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct Character: Codable, Identifiable {
-        
     var id: Int
     var name: String
     var image: String
@@ -17,5 +16,4 @@ struct Character: Codable, Identifiable {
     var occupation: String?
     var url: String
     var voicedBy: String?
-        
 }

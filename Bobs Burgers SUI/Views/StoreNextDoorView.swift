@@ -16,7 +16,7 @@ struct StoreNextDoorView: View {
             List(stores, id: \.id) { store in
                 NavigationLink(destination: StoreDetail(store: store)) {
                     VStack {
-                        Text(store.name)
+                        Text(store.name ?? "Name Unavailable")
                             .font(.body)
                     }
                 }

@@ -15,6 +15,7 @@ struct AlertItem: Identifiable, Error {
 }
 
 struct AlertContext {
-    
-    static let badData = AlertItem(title: Text("Bad Data"), message: Text("This is bad"), dismissButton: .default(Text("Okay")))
+    static let badData = AlertItem(title: Text("Bad Data"),
+                                   message: Text("This is bad"),
+                                   dismissButton: .default(Text("Okay")))
 }
