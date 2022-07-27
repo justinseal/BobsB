@@ -26,7 +26,7 @@ struct ScrollingCharacterView: View {
                                 .frame(width: 80, height: 80)
                             
                         } placeholder: {
-                            ProgressView()
+                            Image("unknown")
                         }
                         Text(character.name)
                             .font(.caption2)
