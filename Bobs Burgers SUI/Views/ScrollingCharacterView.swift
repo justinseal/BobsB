@@ -15,27 +15,30 @@ struct ScrollingCharacterView: View {
     ]
     
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: layout) {
-                ForEach(characters) { character in
-                    VStack {
-                        AsyncImage(url: URL(string: character.image)) { image in
-                            image
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 80, height: 80)
-                            
-                        } placeholder: {
-                            Image("unknown")
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: layout) {
+                    ForEach(characters) { character in
+                        VStack {
+                            AsyncImage(url: URL(string: character.image)) { image in
+                                image
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 80, height: 80)
+                                
+                            } placeholder: {
+                                Image("unknown")
+                            }
+                            Text(character.name)
+                                .font(.caption2)
                         }
-                        Text(character.name)
-                            .font(.caption2)
                     }
                 }
             }
-        }
-        .task {
-            try? await characters = NetworkManager.shared.getCharacters()
+            .task {
+                try? await characters = NetworkManager.shared.getCharacters()
+            }
+            .navigationTitle("Characters")
         }
     }
 }
