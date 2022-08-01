@@ -1,6 +1,8 @@
 # BobsB
 
-This simple App was a tool to show the following technologies:
+I really had a blast building this app. 
+
+This simple App hopes to showcase the following technologies:
 
 - SwiftUI
 
@@ -14,7 +16,9 @@ This simple App was a tool to show the following technologies:
 - Async/await 
 
   
+  
+  <img src="assets/Character Scroll-9377413.png" alt="Character Scroll" style="zoom:25%;" />
 
-<img src="assets/Character Scroll.png" alt="Character Scroll" style="zoom:25%;" />
 
-<img src="assets/List View.png" alt="List View" style="zoom:25%;" />
+
+<img src="assets/List View.png" alt="List View" style="zoom:25%;" /><img src="assets/Detail View.png" alt="Detail View" style="zoom:25%;" />

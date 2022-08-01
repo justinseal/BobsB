@@ -36,7 +36,7 @@ final class NetworkManager {
     }
     
     func getTrucks() async throws -> [PestTruck] {
-        let endPoint = baseURL + "pestControlTruck/"
+        let endPoint = baseURL + "pestControlTruck?skip=12"
         guard let url = URL(string: endPoint) else {
             throw AlertContext.badData
         }
